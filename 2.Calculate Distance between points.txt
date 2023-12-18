@@ -1,0 +1,10 @@
+SELECT
+  f1.name AS place1,
+  f2.name AS place2,
+  ST_Distance(
+    f1.location, 
+    f2.location
+  ) AS distance
+FROM places f1, places f2
+WHERE f1.name='School' 
+AND f2.name='Hospital';

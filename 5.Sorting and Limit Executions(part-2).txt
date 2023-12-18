@@ -1,0 +1,5 @@
+SELECT *
+FROM places
+WHERE ST_Within(location, 
+  ST_MakeEnvelope(-71.05, -71.0, 48.43, 48.45, 4326))
+LIMIT 10;

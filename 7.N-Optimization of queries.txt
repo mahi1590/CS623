@@ -1,0 +1,4 @@
+SELECT places.* 
+FROM places 
+JOIN geo_names_table 
+ON ST_DWithin(places.geom, geo_names_table.geom, 50000);

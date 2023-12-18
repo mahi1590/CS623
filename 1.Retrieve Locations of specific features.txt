@@ -1,0 +1,5 @@
+SELECT 
+  name,
+  ST_AsText(location) AS location
+FROM places
+WHERE feature_name IN ('Pubs', 'Hospital', 'School',’Hotels’,’Colleges’,’Stadium’);

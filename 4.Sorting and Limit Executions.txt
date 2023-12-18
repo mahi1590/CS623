@@ -1,0 +1,3 @@
+a. The firsts query enables one to retrieve features location according to the specific requirement 
+b. The second query enable the user to obtain the distance between the specified points
+c. The third query calculates the area of a specified area in the query

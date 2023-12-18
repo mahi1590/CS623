@@ -1,0 +1,6 @@
+WITH region AS (
+  SELECT ST_ConvexHull(ST_Collect(location)) AS geom
+  FROM places
+  WHERE name IN ('Hospital', 'School')
+)
+SELECT ST_Area(geom) AS area_of_interest FROM region; 

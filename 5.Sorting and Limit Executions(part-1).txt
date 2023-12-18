@@ -1,0 +1,9 @@
+SELECT 
+  f1.name, 
+  f2.name,
+  ST_Distance(f1.location, f2.location) AS distance
+FROM places f1 JOIN places f2
+ON f1.name='School'
+AND f2.name='Hospital'
+ORDER BY distance
+LIMIT 1;
